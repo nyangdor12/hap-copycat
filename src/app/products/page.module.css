@@ -1,0 +1,139 @@
+/*   title page   */
+.categoryview{
+    height: 100px;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.pagetitle {
+    color: rgb(78, 90, 40);
+    font-weight: normal;
+    font-size: 26px;
+    padding-top: 20px;
+}
+
+
+
+
+/*     page columns    */
+.columns {
+    display: grid;
+    position: relative;
+    gap: 10px;
+    grid-template-areas: "sidebar maincolumn";
+    grid-template-columns: 200px 800px;
+    justify-content: center;
+}
+
+
+
+
+/*    main column    */
+.maincolumn {
+    grid-area: maincolumn;
+}
+
+.toolbaramount {
+    font-size: 12px;
+}
+
+.toolbar {
+    width: 200px;
+
+    /*position: relative;*/
+    margin-left: auto;
+}
+
+.sorterlabel {
+    font-size: 13px;
+}
+
+.sorteroptions {
+    background-color: rgb(245, 242, 237);
+}
+
+.descdirection {
+    font-size: 13px;
+    color: black;
+}
+
+.productsgrid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 180px);
+    grid-template-rows: repeat(3, 220px);
+    gap: 10px 10px;
+}
+
+/* page display component */
+/*.displaycontainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    color: black;
+    font-size: 13px;
+}
+
+.price {
+    color: rgb(233, 100, 67);
+    font-size: 13px;
+}
+
+.addtocartbutton {
+    color: white;
+    text-weight: bold;
+    text-transform: uppercase;
+
+    background-color: rgb(233, 100, 67);
+    font-size: 10px;
+    font-weight: bold;
+    border-radius: 20px;
+    height: 30px;
+    width: 180px;
+    text-align: center;
+}
+
+.displaycontainer:not(:hover) .addtocartbutton {
+    visibility: hidden;
+}*/
+
+
+
+
+
+/*    sidebar column*/
+.sidebar {
+    grid-area: sidebar;
+}
+
+.nopadding {
+    padding-left: 0;
+}
+
+/* "shopping options" */
+.filtersubtitle {
+    color: rgb(147, 155, 78);
+    font-weight: bold;
+}
+
+.filtercontents {
+    /* this will be a flex box*/
+}
+
+.filteroption {
+    border-top: .5px solid gray;
+}
+
+.filteroptiontitle {
+    height: 30px;
+    font-weight: bold;
+    font-size: 14px;
+    padding-top: 13px;
+}
+
+.filteroptionitem {
+    color: gray;
+    font-size: 12px;
+}

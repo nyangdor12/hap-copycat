@@ -1,95 +1,92 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 
+
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+      <head>
+        <title>Pet Supplies Canada | Shop Pet Products at Homesalive.ca</title>
+      </head>
+      {/* page main content */}
+      <main className="page-main" id="maincontent">
+        <div className="columns">
+          <div className="column main">
+            {/* my carousel banner */}
+            <div className={styles.carouselwrapper}>
+              <div className={styles.slides}>
+
+                <div className="slide-1">
+                  <a href="https://www.homesalive.ca/seasonal/summer-shop.html?nosto=66684e76573f4a6b11da80ec" target="_self">
+                    <Image 
+                      src="/images/summer.jpeg" 
+                      width={767*1.73} 
+                      height={300*1.73}
+                      alt="summer" 
+                    />
+                  </a>
+                </div>
+
+                <div className="slide-2">
+                  <a href="https://www.homesalive.ca/seasonal/summer-shop.html?nosto=66684e76573f4a6b11da80ec" target="_self">
+                    <Image 
+                      src="/images/sale_tikicat.jpeg" 
+                      width={767*1.73} 
+                      height={300*1.73}
+                      alt="tikicat" 
+                    />
+                  </a>
+                </div>
+
+                <div className="slide-3">
+                  <a href="https://www.homesalive.ca/seasonal/summer-shop.html?nosto=66684e76573f4a6b11da80ec" target="_self">
+                    <Image 
+                      src="/images/sale_acana.jpeg" 
+                      width={767*1.73} 
+                      height={300*1.73}
+                      alt="acana" 
+                    />
+                  </a>
+                </div>
+
+              </div>
+            </div>
+           
+        
+            {/* non-carousel main page content */}
+            <div className="home-inner">
+              <section className="section recommended-brands">
+                <div className={styles.brandsheader}>
+                  <h3 className={styles.h3}>Shop By Brand</h3>
+                  <h4 className={styles.h4}>Shop hundreds of your favourite pet brands - <a className={styles.a} title="view all brands" href="/brands.html" target="_self">Shop All Brands</a></h4>
+                </div>
+                <ul className={styles.brandslist}>
+                  <li>
+                    <a href="/brands/acana.html">
+                      <img height="143" width="143" className="lazy loaded" data-src="https://www.homesalive.ca/media/wysiwyg/homepage/Acana-Logo.jpg" alt="Acana Logo" src="https://www.homesalive.ca/media/wysiwyg/homepage/Acana-Logo.jpg"/>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/brands/go.html">
+                      <img height="143" width="143" className="lazy loaded" data-src="https://www.homesalive.ca/media/wysiwyg/homepage/go-logo.jpg" alt="Go! Logo" src="https://www.homesalive.ca/media/wysiwyg/homepage/go-logo.jpg"/>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/brands/blue-buffalo.html">
+                      <img height="143" width="143" className="lazy loaded" data-src="https://www.homesalive.ca/media/wysiwyg/homepage/blue-buffalo-logo.jpg" alt="Blue Buffalo Logo" src="https://www.homesalive.ca/media/wysiwyg/homepage/blue-buffalo-logo.jpg"/>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/brands/stella-chewys.html">
+                      <img height="143" width="143" className="lazy loaded" data-src="https://www.homesalive.ca/media/wysiwyg/homepage/stella-and-chewys-logo.jpg" alt="Stella &amp; Chewy's Logo" src="https://www.homesalive.ca/media/wysiwyg/homepage/stella-and-chewys-logo.jpg" />
+                    </a>
+                  </li>
+                </ul>
+              </section>
+            </div>
+          </div>
         </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+      </main>
+    </>
   );
 }

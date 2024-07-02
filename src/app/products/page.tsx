@@ -10,6 +10,7 @@ export default function Page()
 {
     const [ productList, setProductList ] = useState([] as any);
     //const { cartList } = useCartList();
+    //i'm doing something
 
     useEffect( ()=>{
         const loadProducts = generateFakeProducts(10);
